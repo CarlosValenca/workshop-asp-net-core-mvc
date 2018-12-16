@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using SalesWebMvc.Models;
 using SalesWebMvc.Data;
+using SalesWebMvc.Services;
 
 namespace SalesWebMvc
 {
@@ -43,6 +44,9 @@ namespace SalesWebMvc
 
             // ssbcvp - Registra o nosso serviço no sistema de injeção de dependências da aplicação
             services.AddScoped<SeedingService>();
+
+            // ssbcvp - Serviço pode ser injetado em outras classes
+            services.AddScoped<SellerService>();
 
         }
 
