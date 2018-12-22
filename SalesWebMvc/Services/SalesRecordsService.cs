@@ -38,5 +38,32 @@ namespace SalesWebMvc.Services
                 .ToListAsync();
 
         }
+
+        //ssbcvp - note que a lista mudou de tipo para comportar a operação Group By
+        public async Task<List<IGrouping<Department,SalesRecord>>> FindByDateGroupingAsync(DateTime? minDate, DateTime? maxDate)
+        {
+            //ssbcvp - estamos fazendo uma busca agrupada no banco (GROUP BY) e retornando as vendas
+            //com os departamentos e vendedores, ordenados por data decrescente
+            var result = from obj in _context.SalesRecord select obj;
+            if (minDate.HasValue)
+            {
+                result = result.Where(x => x.Date >= minDate.Value);
+            }
+
+            if (maxDate.HasValue)
+            {
+                result = result.Where(x => x.Date <= maxDate.Value);
+            }
+
+            return await result
+                .Include(x => x.Seller)
+                .Include(x => x.Seller.Department)
+                .OrderByDescending(x => x.Date)
+                .GroupBy(x => x.Seller.Department)
+                .ToListAsync();
+
+        }
+
+
     }
 }
