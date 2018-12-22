@@ -46,6 +46,14 @@ namespace SalesWebMvc.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Seller seller)
         {
+            // ssbcvp - caso o javascript estiver desabilitado nas configurações de javascript em avançado,
+            // este If irá retornar a própria view até que o usuário preencha corretamente a tela
+            if (!ModelState.IsValid)
+            {
+                var departmens = _departmentService.FindAll();
+                var viewModel = new SellerFormViewModel { Seller = seller, Departments = departmens };
+                return View(viewModel);
+            }
             _sellerService.Insert(seller);
             return RedirectToAction(nameof(Index));
         }
@@ -114,6 +122,14 @@ namespace SalesWebMvc.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, Seller seller)
         {
+
+            if (!ModelState.IsValid)
+            {
+                var departmens = _departmentService.FindAll();
+                var viewModel = new SellerFormViewModel { Seller = seller, Departments = departmens };
+                return View(viewModel);
+            }
+
             if (id != seller.Id)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id mismatch" });
