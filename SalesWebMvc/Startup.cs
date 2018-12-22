@@ -46,12 +46,9 @@ namespace SalesWebMvc
 
             // ssbcvp - Registra o nosso serviço no sistema de injeção de dependências da aplicação
             services.AddScoped<SeedingService>();
-
-            // ssbcvp - Serviço pode ser injetado em outras classes
             services.AddScoped<SellerService>();
-
-            // ssbcvp - Serviço pode ser injetado em outras classes
             services.AddScoped<DepartmentService>();
+            services.AddScoped<SalesRecordsService>();
 
         }
 
