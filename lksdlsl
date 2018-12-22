@@ -1,0 +1,89 @@
+[33mcommit 7b68e575a42cf4720698057eeec12e926a166f6f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: = <=>
+Date:   Thu Dec 20 20:08:54 2018 -0200
+
+    SellerFormViewModel and Department select component
+
+[33mcommit de48a23e42bad14da6f5dc02c0ae6b568c107722[m
+Author: = <=>
+Date:   Thu Dec 20 19:44:56 2018 -0200
+
+    Foreign key not null (referential integrity)
+
+[33mcommit 8c11487fb2fdc5792cdb52f16eb99ba6634de1e5[m
+Author: = <=>
+Date:   Sun Dec 16 15:55:12 2018 -0200
+
+    Simple Create form
+
+[33mcommit 3723bbb2e4fa54fd4929838bd705e4bb6a1ee297[m
+Author: = <=>
+Date:   Sun Dec 16 15:15:13 2018 -0200
+
+    SellerService and basic FindAll
+
+[33mcommit 2ea1b6281e5a4a8f23967fc8997689a930d30970[m
+Author: = <=>
+Date:   Sun Dec 16 14:49:37 2018 -0200
+
+    SellersController
+
+[33mcommit 20b5355e30b3f3d33d37a71881d377ba6bcef0d7[m
+Author: = <=>
+Date:   Sun Dec 16 14:38:23 2018 -0200
+
+    Seeding Service
+
+[33mcommit 19b0a692537a37f078ece36502ee36d887a174d0[m
+Author: = <=>
+Date:   Sun Dec 16 12:45:07 2018 -0200
+
+    Other entities and second migration
+
+[33mcommit 588684338900cc37d87b26064580741c9b15a12e[m
+Author: = <=>
+Date:   Sun Dec 16 11:57:34 2018 -0200
+
+    Changing theme
+
+[33mcommit 6a4e0dfc831bd1fbd9fe92009e29a69355a3a825[m
+Author: = <=>
+Date:   Sun Dec 16 11:46:31 2018 -0200
+
+    MySQL adaptation and first migration
+
+[33mcommit c8bc885c40c6325cd40d068f033b9518b7180308[m
+Author: = <=>
+Date:   Sun Dec 16 11:09:36 2018 -0200
+
+    CRUD Scaffolding
+
+[33mcommit 91da68497ac2ad795679dbe36bf4021cf74e5d90[m
+Author: = <=>
+Date:   Sun Dec 16 11:00:39 2018 -0200
+
+    Deleting Department view and controller
+
+[33mcommit 0b95108e83398551e4c7d987ebc426d901ad7716[m
+Author: = <=>
+Date:   Sun Dec 16 10:55:27 2018 -0200
+
+    First Model-Controller-View - Department
+
+[33mcommit a1c5dd1d8769952d22d0b8c00084eb0b45f08e0c[m
+Author: = <=>
+Date:   Sun Dec 16 10:23:51 2018 -0200
+
+    First controller and Razor pages tests
+
+[33mcommit 0c3abbee6e90a6cfd26a9cccc9062c07f44edc5d[m
+Author: = <=>
+Date:   Sun Dec 16 09:43:48 2018 -0200
+
+    Versao Inicial
+
+[33mcommit f6519b8e94d267d2afd3562ec5be643c920438d0[m
+Author: Advocacia Flora <Advocacia Flora@FAMILIA2>
+Date:   Sun Dec 16 09:20:02 2018 -0200
+
+    Add .gitignore and .gitattributes.
